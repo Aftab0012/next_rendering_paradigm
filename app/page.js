@@ -7,6 +7,8 @@ const page = () => {
     localStorage.setItem('name', 'john doe');
   };
 
+  const localValue = localStorage.getItem('name');
+
   return (
     <div>
       <button onClick={persistLogin}>add</button>
