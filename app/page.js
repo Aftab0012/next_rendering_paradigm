@@ -6,7 +6,6 @@ const page = () => {
   useEffect(() => {
     localStorage.setItem('lame', 'asd');
   }, []);
-  window.localStorage.foo = 'bar';
   return <div>page</div>;
 };
 
