@@ -3,12 +3,13 @@
 import React, { useEffect } from 'react';
 
 const page = () => {
-  useEffect(() => {
-    persistLogin;
-  }, []);
   const persistLogin = () => {
     localStorage.setItem('name', 'john doe');
   };
+  useEffect(() => {
+    persistLogin();
+  }, []);
+
   return <div>page</div>;
 };
 
