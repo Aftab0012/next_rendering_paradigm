@@ -3,8 +3,9 @@
 import React, { useEffect } from 'react';
 
 const page = () => {
-  localStorage.setItem('lame', 'asd');
-  useEffect(() => {}, []);
+  useEffect(() => {
+    localStorage.setItem('lame', 'asd');
+  }, []);
   window.localStorage.foo = 'bar';
   return <div>page</div>;
 };
