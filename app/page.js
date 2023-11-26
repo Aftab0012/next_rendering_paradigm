@@ -6,11 +6,12 @@ const page = () => {
   const persistLogin = () => {
     localStorage.setItem('name', 'john doe');
   };
-  useEffect(() => {
-    persistLogin();
-  }, []);
 
-  return <div>page</div>;
+  return (
+    <div>
+      <button onClick={persistLogin}>add</button>
+    </div>
+  );
 };
 
 export default page;
