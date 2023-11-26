@@ -7,7 +7,10 @@ const page = () => {
     localStorage.setItem('name', 'john doe');
   };
 
-  const localValue = localStorage.getItem('name');
+  useEffect(() => {
+    const localValue = localStorage.getItem('name');
+    console.log(localValue);
+  }, []);
 
   return (
     <div>
